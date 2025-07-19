@@ -1,0 +1,389 @@
+:root{
+    /* --altura_header: 80px; */
+    --padding_left_right: 2rem;
+    --ancho_maximo_: 1200px; 
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ol,ul{
+    list-style: none;
+}
+.header{
+    background-color: #131921;
+    padding-top: 15px;
+    padding-left: 25px;
+    padding-bottom: 10px;
+    display: flex;
+}
+.sgnda-linea{
+    background-color: #202d41;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.encabezado {
+    height: var(--altura_header);
+    background-color: #202d41;
+}
+.navbar {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 0 var(--padding_left_right);
+}
+.list_icon {
+    color: white;
+    cursor: pointer;
+}
+.ul_links {
+    background-color: white;
+    width: 100vw;
+    position: absolute;
+    top: 108px;
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    /* height: calc(100vh - 80px); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    transition: all .3s;
+
+    z-index: 1000;
+    position: fixed;
+}
+.link {
+    font-size: 3rem;
+}
+.menu_hamburguesa{
+    display: none;
+    color: black;
+    font-weight: bold;
+}
+.menu_hamburguesa:checked + .ul_links {
+    height: calc(100vh - 80px);
+}
+a:hover{
+    color: rgb(65, 61, 61);
+    box-shadow: 0px 2px 0px rgb(126, 122, 122);
+}
+.input1 {
+    padding: 12px;
+    padding-right: 300px;
+    border-radius: 5px 5px 5px 5px;
+    border: 0;
+    outline: none;
+}
+.container{
+    position: relative;
+    margin-left: 20%;
+}
+.lupa{
+    background-color: rgb(250, 183, 81);
+    padding: 10px;
+    padding-left: 15px;
+    position: absolute;
+    border: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+.lupa:hover{
+    background-color: rgb(243, 166, 50);
+}
+.luá, i{
+    margin-right: 5px;
+}
+.shop{
+    margin-left: 200px;
+}
+.shop, .carrito{
+    background-color: #131921;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    padding-left: 15px;
+}
+.devoluciones{
+    color: white;
+    margin-left: 80px;
+}
+.devoluciones:hover{
+    border: 1px solid white;
+}
+.pedido{
+    margin-left: 10px;
+}
+.flex-hamburguer{
+    display: flex;
+}
+.todo{
+    margin-top: 5px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif  ;
+}
+.ofertas {
+    margin-left: 50px;
+    color: white;
+    margin-top: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.servicio {
+    margin-left: 50px;
+    color: white;
+    margin-top: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.listas {
+    margin-left: 50px;
+    color: white;
+    margin-top: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.tarjetas {
+    margin-left: 50px;
+    color: white;
+    margin-top: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.vender {
+    margin-left: 50px;
+    color: white;
+    margin-top: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.ofertas:hover{
+    border: 1px white solid;
+}
+.servicio:hover{
+    border: 1px white solid;
+}
+.listas:hover{
+    border: 1px white solid;
+}
+.tarjetas:hover {
+    border: 1px white solid;
+}
+.vender:hover{
+    border: 1px white solid;
+}
+.productos{
+    display: flex;
+}
+
+/* Esto es la seccion de Productos todo lo anterior es para el header y la 2do linea abajo del header  */
+.mause{
+    color: black;
+    background-color: white;
+    width: 280px;
+    height: 300px;
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 15px;
+}
+.mause:hover{
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+.texto{
+    text-align: center
+}
+.boton{
+    margin-left: 20%;
+    margin-top: 1px;
+    padding: 5px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border: none;
+    background-color: orange;
+    border-radius: 100px;
+    font-size: 25px;
+    text-decoration: none;
+}
+.boton:hover{
+    background-color: yellow;
+    transition: 1s;
+}
+.texto:hover{
+    color: rgb(240, 165, 25);
+}
+
+.mause1{
+    color: black;
+    background-color: white;
+    width: 280px;
+    height: 300px;
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 15px;
+}
+.mause1 img{
+    margin-left: 80px;
+    margin-top: 5px;
+}
+.mause1:hover{
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+.texto1{
+    text-align: center
+}
+.boton1{
+    margin-left: 20%;
+    margin-top: 1px;
+    padding: 5px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border: none;
+    background-color: orange;
+    border-radius: 100px;
+    font-size: 25px;
+    text-decoration: none;
+}
+.boton1:hover{
+    background-color: yellow;
+    transition: 1s;
+}
+.texto1:hover{
+    color: rgb(240, 165, 25);
+}
+
+.mause2{
+    color: black;
+    background-color: white;
+    width: 280px;
+    height: 300px;
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 15px;
+}
+.mause2 img{
+    margin-left: 20px;
+}
+.mause2:hover{
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+.texto2{
+    text-align: center
+}
+.boton2{
+    margin-left: 20%;
+    margin-top: 1px;
+    padding: 5px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border: none;
+    background-color: orange;
+    border-radius: 100px;
+    font-size: 25px;
+    text-decoration: none;
+}
+.boton2:hover{
+    background-color: yellow;
+    transition: 1s;
+}
+.texto2:hover{
+    color: rgb(240, 165, 25);
+}
+
+                      /* <-----------Menu Lateral------------------>  */
+
+.menuyproducts{
+     display: flex; 
+}
+#menulateral{
+    background-color: #131921;
+    height: 100vh;
+    width: 500px;
+    margin-right: 25px;
+}
+#lomasvendido{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: orange;
+    font-size: 50px;
+    text-shadow:
+      0 0 0px #fff,
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 20px #0ff,
+      0 0 70px #0ff,
+      0 0 80px #0ff,
+      0 0 90px #0ff,
+      0 0 100px #0ff;
+      margin-top: 20px;
+}
+
+                      /* <---------lo mas vendido css  --------------------->*/
+.mausel{
+    color: black;
+    background-color: white;       
+    width: 230px;
+    height: 250px;
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 15px;
+}
+.mausel img{
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.mausel:hover{
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+.textol{
+    text-align: center
+}
+.botonl{
+    margin-left: 15%;
+    margin-top: 1px;
+    padding: 5px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border: none;
+    background-color: orange;
+    border-radius: 100px;
+    font-size: 25px;
+    text-decoration: none;
+}
+.botonl:hover{
+    background-color: yellow;
+    transition: 1s;
+}
+.textol:hover{
+    color: rgb(240, 165, 25);
+}
+.al{
+    color: white;
+    text-decoration: none;
+}
+.fila-2product{
+    display: flex;
+}
+.sectionproducts{
+    margin-left: 180px;
+}
