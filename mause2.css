@@ -410,3 +410,106 @@ select {
     transition: 0.8s;
     color: white;
 }
+
+
+/* ↓↓↓ AÑADIR AL FINAL DEL ARCHIVO ↓↓↓ */
+
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .container {
+        margin-left: 0;
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .input1 {
+        padding-right: 1rem;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .lupa {
+        position: relative;
+        right: auto;
+        width: 100%;
+        border-radius: 5px;
+        margin-top: 5px;
+    }
+
+    .devoluciones, .shop {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .shop {
+        align-self: flex-end;
+    }
+
+    .flex-hamburguer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .todo, .ofertas, .servicio, .listas, .tarjetas, .vender {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .menuyproducts {
+        flex-direction: column;
+    }
+
+    #menulateral {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .mausel {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .imagendelproducto {
+        flex-direction: column;
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .imagendelproducto img {
+        width: 90%;
+        height: auto;
+    }
+
+    .info {
+        width: 90%;
+        margin: 20px auto;
+        font-size: 20px;
+    }
+
+    .Comprar-car {
+        width: 100%;
+    }
+
+    .boton1 {
+        width: 100%;
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    .atras {
+        width: 90%;
+        margin: 15px auto;
+        display: block;
+    }
+
+    .ul_links {
+        top: 130px;
+    }
+}
